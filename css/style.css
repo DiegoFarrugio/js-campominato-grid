@@ -1,0 +1,13 @@
+.container-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 10%;
+    height: 100px;
+    background-color: lightcoral;
+    border: dashed green 2px;
+    text-align: center;
+    line-height: 100px;
+}
