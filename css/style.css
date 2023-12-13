@@ -5,11 +5,11 @@
 
 .cell{
     width: 10%;
-    height: 100px;
+    height: 60px;
     background-color: lightcoral;
     border: dashed green 2px;
     text-align: center;
-    line-height: 100px;
+    line-height: 60px;
     color: white;
     font-size: 18px;
 }
@@ -20,4 +20,6 @@
     color: blueviolet;
     border-radius: 1px;
 }
+
+
 
