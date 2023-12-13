@@ -3,11 +3,21 @@
     flex-wrap: wrap;
 }
 
-.box{
+.cell{
     width: 10%;
     height: 100px;
     background-color: lightcoral;
     border: dashed green 2px;
     text-align: center;
     line-height: 100px;
+    color: white;
+    font-size: 18px;
 }
+
+.click-active{
+    background-color: aqua;
+    font-size: 36px;
+    color: blueviolet;
+    border-radius: 1px;
+}
+
