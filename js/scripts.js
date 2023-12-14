@@ -13,15 +13,33 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.*/
 
 const myButton = document.getElementById('myButton');
 
+const diffSelect = document.getElementById('difficulty');
+
+const containerGrid = document.querySelector ('.container-grid')  //Mi seleziono il container grid dell'Html
+
+
 myButton.addEventListener('click', function(){
 
-    const containerGrid = document.querySelector ('.container-grid')  //Mi seleziono il container grid dell'Html
+    const cellNumber = parseInt(diffSelect.value);
 
-    for(let i = 1; i <= 100; i++){ 
+    containerGrid.innerHTML = '';
+
+
+    for(let i = 1; i <= cellNumber; i++){ 
         const cell = document.createElement ('div'); //Così facendo creo i DIV e al momento mi fa vedere solo i numeri in pagina
         cell.classList.add('cell'); //Aggiungo la classe cell richiamandola dal CSS così da dare lo stile
         cell.innerHTML = i; //Aggiungo questo per scrivere il numero all'interno di ogni cella
     
+        if (cellNumber == 100){
+            cell.classList.add('cell-100');
+        }
+        else if (cellNumber == 81){
+            cell.classList.add('cell-81');
+        }
+        else if (cellNumber == 49){
+            cell.classList.add('cell-49');
+        }
+
         containerGrid.append(cell); //Dopo aver fatto tutto inserisco le celle dentro il containterGrid con l'append
     
     
